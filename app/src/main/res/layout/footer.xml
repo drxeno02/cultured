@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/custom_dark_blue"
+    tools:ignore="ContentDescription, UselessParent">
+
+    <!-- divider -->
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/custom_footer_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+<!--        <LinearLayout-->
+<!--            android:layout_weight="0.20"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="@dimen/dimens_80" >-->
+<!--            -->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:src="@drawable/home_icon"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:layout_height="@dimen/dimens_50" />-->
+<!--            -->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:text="@string/footer_home"-->
+<!--                android:textColor="@color/custom_footer_blue"-->
+<!--                android:textSize="@dimen/font_size_12"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </LinearLayout>-->
+
+        <!-- home -->
+        <TextView
+            android:id="@+id/tv_footer_home"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_weight="0.20"
+            android:drawableTop="@drawable/home_icon"
+            android:gravity="center"
+            android:text="@string/footer_home"
+            android:textColor="@color/custom_footer_blue"
+            android:textSize="@dimen/font_size_12" />
+
+        <!-- communicate -->
+        <TextView
+            android:id="@+id/tv_footer_communicate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_weight="0.20"
+            android:drawableTop="@drawable/communicate_icon"
+            android:gravity="center"
+            android:text="@string/footer_communicate"
+            android:textColor="@color/custom_footer_blue"
+            android:textSize="@dimen/font_size_12" />
+
+        <!-- main -->
+        <ImageView
+            android:padding="@dimen/dimens_4"
+            android:id="@+id/iv_footer_main"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:background="@drawable/main_icon" />
+
+        <!-- play -->
+        <TextView
+            android:id="@+id/tv_footer_play"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_weight="0.20"
+            android:drawableTop="@drawable/play_icon"
+            android:gravity="center"
+            android:text="@string/footer_play"
+            android:textColor="@color/custom_footer_blue"
+            android:textSize="@dimen/font_size_12" />
+
+        <!-- devices -->
+        <TextView
+            android:id="@+id/tv_footer_devices"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_weight="0.20"
+            android:drawableTop="@drawable/devices_icon"
+            android:gravity="center"
+            android:text="@string/footer_devices"
+            android:textColor="@color/custom_footer_blue"
+            android:textSize="@dimen/font_size_12" />
+    </LinearLayout>
+
+</FrameLayout>

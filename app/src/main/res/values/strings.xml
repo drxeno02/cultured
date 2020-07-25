@@ -1,3 +1,32 @@
 <resources>
+    <!-- app name -->
     <string name="app_name">Cultured</string>
+
+    <!-- app labels -->
+    <string name="title_setup">Setup</string>
+    <string name="title_popular_brands">Popular Brands</string>
+    <string name="title_all_devices">All Devices</string>
+    <string name="what_device_setup">What type of device are\nyou setting up?</string>
+
+    <!-- devices -->
+    <string name="amazon_echo">Amazon Echo</string>
+    <string name="light">Light</string>
+    <string name="plug">Plug</string>
+    <string name="device_switch">Switch</string>
+
+    <!-- brands -->
+    <string name="philips_hue">Philips Hue</string>
+    <string name="kasa">Kasa</string>
+    <string name="wemo">Wemo</string>
+
+    <!-- footer -->
+    <string name="footer_home">Home</string>
+    <string name="footer_communicate">Communicate</string>
+    <string name="footer_play">Play</string>
+    <string name="footer_devices">Devices</string>
+
+    <!-- dialog -->
+    <string name="dialog_title">Dialog Title</string>
+    <string name="dialog_message">This is an example of what dialog body text looks like. Brand is: %s</string>
+
 </resources>

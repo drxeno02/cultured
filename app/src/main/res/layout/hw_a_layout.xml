@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_dark_blue"
+    tools:ignore="ContentDescription">
+
+    <!-- header -->
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <!-- description -->
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:paddingStart="@dimen/dimens_20"
+        android:paddingEnd="@dimen/dimens_20"
+        android:text="@string/what_device_setup"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_26"
+        android:textStyle="bold" />
+
+    <!-- header section; popular brands -->
+    <include
+        android:id="@+id/rl_header_section_popular_brands"
+        layout="@layout/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_26"
+        android:layout_below="@+id/tv_desc"
+        android:layout_marginTop="@dimen/dimens_20" />
+
+    <!-- popular brands icons -->
+    <LinearLayout
+        android:id="@+id/ll_wrapper_popular_brands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header_section_popular_brands"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <!-- amazon echo -->
+        <ImageView
+            android:id="@+id/iv_device_amazon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_marginStart="@dimen/dimens_20"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_white_10_rad"
+            android:src="@drawable/amazon_echo_logo" />
+
+        <!-- philips hue -->
+        <ImageView
+            android:id="@+id/iv_device_philips"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_marginStart="@dimen/dimens_20"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_white_10_rad"
+            android:padding="@dimen/dimens_16"
+            android:src="@drawable/philips_hue_logo" />
+
+        <!-- kasa -->
+        <ImageView
+            android:id="@+id/iv_device_kasa"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_marginStart="@dimen/dimens_20"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_white_10_rad"
+            android:src="@drawable/kasa_logo" />
+
+        <!-- wemo -->
+        <ImageView
+            android:id="@+id/iv_device_wemo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimens_80"
+            android:layout_marginStart="@dimen/dimens_20"
+            android:layout_marginEnd="@dimen/dimens_20"
+            android:layout_weight="0.25"
+            android:background="@drawable/background_white_10_rad"
+            android:src="@drawable/wemo_logo" />
+
+    </LinearLayout>
+
+    <!-- header section; all devices -->
+    <include
+        android:id="@+id/rl_header_section_all_devices"
+        layout="@layout/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_26"
+        android:layout_below="@+id/ll_wrapper_popular_brands"
+        android:layout_marginTop="@dimen/dimens_20" />
+
+    <!-- device items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@+id/footer"
+        android:id="@+id/rv_device_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header_section_all_devices"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/dimens_20"
+        android:scrollbars="vertical" />
+
+    <!-- footer -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer"
+        layout="@layout/footer"/>
+
+</RelativeLayout>

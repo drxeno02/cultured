@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- all device items -->
+    <string-array name="array_all_devices">
+        <item>@string/amazon_echo</item>
+        <item>@string/light</item>
+        <item>@string/plug</item>
+        <item>@string/device_switch</item>
+    </string-array>
+
+</resources>

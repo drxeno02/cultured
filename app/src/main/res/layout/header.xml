@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimens_60"
+    android:background="@color/custom_dark_blue"
+    android:paddingStart="@dimen/dimens_20"
+    android:paddingEnd="@dimen/dimens_20"
+    tools:ignore="ContentDescription">
+
+    <!-- menu button -->
+    <ImageView
+        android:id="@+id/iv_header_menu"
+        android:layout_width="@dimen/dimens_40"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_centerVertical="true"
+        android:src="@drawable/menu_icon" />
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/tv_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/iv_header_faq"
+        android:layout_toEndOf="@+id/iv_header_menu"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_20"
+        android:textStyle="bold" />
+
+    <!-- faq button -->
+    <ImageView
+        android:id="@+id/iv_header_faq"
+        android:layout_width="@dimen/dimens_35"
+        android:layout_height="@dimen/dimens_35"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimens_4"
+        android:src="@drawable/faq_icon" />
+
+</RelativeLayout>
